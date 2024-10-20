@@ -6,7 +6,8 @@ import pandas as pd
     
 #     Args:
 #         filepath (str): Path to the Titanic CSV file.
-    
+  
+     
 #     Returns:
 #         pd.DataFrame: Loaded Titanic dataset as a DataFrame.
 #     """
