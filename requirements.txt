@@ -1,2 +1,7 @@
 pandas
+<<<<<<< HEAD
 numpy
+=======
+numpy
+pytest
+>>>>>>> d3a31da53e73eba24f10da5de69923894313537e

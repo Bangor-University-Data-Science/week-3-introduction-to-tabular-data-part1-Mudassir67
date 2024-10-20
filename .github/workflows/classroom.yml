@@ -13,12 +13,18 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+<<<<<<< HEAD
     - name: week3 Python test
       id: week3-python-test
+=======
+    - name: week3-tabular-data-part1
+      id: week3-tabular-data-part1
+>>>>>>> d3a31da53e73eba24f10da5de69923894313537e
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 60
         max-score: 100
+<<<<<<< HEAD
         setup-command: pip install pytest
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
@@ -26,3 +32,12 @@ jobs:
         WEEK3-PYTHON-TEST_RESULTS: "${{steps.week3-python-test.outputs.result}}"
       with:
         runners: week3-python-test
+=======
+        setup-command: pip install pytest pandas
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        WEEK3-TABULAR-DATA-PART1_RESULTS: "${{steps.week3-tabular-data-part1.outputs.result}}"
+      with:
+        runners: week3-tabular-data-part1
+>>>>>>> d3a31da53e73eba24f10da5de69923894313537e
