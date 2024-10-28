@@ -1,5 +1,4 @@
 from titanic_analysis.summary_table import create_summary_table
-<<<<<<< HEAD
 
 def test_create_summary_table():
     # Mock a DataFrame

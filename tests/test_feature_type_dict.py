@@ -1,6 +1,4 @@
 from titanic_analysis.feature_type_dict import create_feature_type_dict
-<<<<<<< HEAD
-
 def test_create_feature_type_dict():
     # Mock a DataFrame
     mock_df = {
