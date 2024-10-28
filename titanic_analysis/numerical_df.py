@@ -1,27 +1,13 @@
-# def get_numerical_df(df, numerical_features):
-#     """
-#     Creates a DataFrame containing only numerical features.
-    
-#     Args:
-#         df (pd.DataFrame): The Titanic dataset as a DataFrame.
-#         numerical_features (list): List of numerical feature names.
-    
-#     Returns:
-#         pd.DataFrame: DataFrame containing only numerical features.
-#     """
-#     pass  # Implement the logic here
+import pandas as pd
 
+def get_numerical_df(df, numerical_features):
+    # Filter the DataFrame
+    numerical_df = df[numerical_features].copy()
+    return numerical_df
 
-from data_loader import load_titanic_data
-from feature_type_dict import create_feature_type_dict
-df = load_titanic_data('data/titanic.csv')  
-# df = load_titanic_data()
- 
-
-feature_types = create_feature_type_dict(df)
-
-
-numerical_features = feature_types['numerical']['continuous'] + feature_types['numerical']['discrete']
-numerical_df = df[numerical_features]
-
-print(numerical_df)
+# Test function execution and output
+if __name__ == "__main__":
+    filepath = "data/titanic.csv" 
+    titanic_data = pd.read_csv(filepath)
+    numerical_features = ['Age', 'Fare']
+    numerical_df = get_numerical_df(titanic_data, numerical_features)
