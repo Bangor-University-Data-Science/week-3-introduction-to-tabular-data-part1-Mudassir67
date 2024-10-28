@@ -14,7 +14,8 @@
 
 from data_loader import load_titanic_data
 from feature_type_dict import create_feature_type_dict
-df = load_titanic_data()
+df = load_titanic_data('data/titanic.csv')  
+# df = load_titanic_data()
  
 
 feature_types = create_feature_type_dict(df)

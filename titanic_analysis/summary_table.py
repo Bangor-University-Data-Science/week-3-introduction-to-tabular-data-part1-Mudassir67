@@ -33,7 +33,7 @@ def create_summary_table(df):
 if __name__ == "__main__":
 
 
-    # df = load_titanic_data('data/titanic.csv')  
-    df = load_titanic_data()
+    df = load_titanic_data('data/titanic.csv')  
+    # df = load_titanic_data()
     summary_df = create_summary_table(df)
     print(summary_df)
